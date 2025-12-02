@@ -1,9 +1,15 @@
-print("-="*32)
-print("INÍCIO")
-print("-="*32)
-[1] CADASTRAR JOGADOR
-[2] LISTA DE JOGADORES
-[3] GERAR TIME
-[4] SAIR
+from utility.funcoes import menu
 
-chave
+chave_menu = menu()
+
+if chave_menu == 1:
+    print()
+elif chave_menu == 2:
+    print()
+elif chave_menu == 3:
+    print()
+elif chave_menu == 4:
+    print()
+else:
+    print("-="*32)
+    print('Dígite um índice válido.')
