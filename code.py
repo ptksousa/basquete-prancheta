@@ -1,6 +1,7 @@
-from utility.funcoes import menu
+from utility.funcoes import menu, indice
 
-chave_menu = menu()
+menu()
+chave_menu = indice()
 
 if chave_menu == 1:
     print()
