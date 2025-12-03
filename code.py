@@ -7,12 +7,13 @@ while True:
     chave_menu = indice()
 
     if chave_menu == 1:
-        jogador = cadastrar()
-        elenco.append(jogador)
+            jogador = cadastrar()
+            elenco.append(jogador)
+            print('Jogador cadastrado com sucesso.')
     elif chave_menu == 2:
         print(elenco)
     elif chave_menu == 3:
-        print()
+        print('EM BREVE')
     elif chave_menu == 4:
         break
     else:
