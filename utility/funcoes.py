@@ -24,7 +24,7 @@ def cadastrar():
     print("-="*32)
     nome = input('Digíte o primeiro nome do jogador: ').upper().strip()
     sobrenome = input('Digíte o último nome do jogador: ').upper().strip()
-    nome_completo = nome + sobrenome
+    nome_completo = nome + ' ' + sobrenome
     while True:
         try:
             idade = int(input('Digíte a idade do jogador: '))
