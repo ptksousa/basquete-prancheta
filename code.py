@@ -1,4 +1,4 @@
-from utility.funcoes import menu, indice, cadastrar, carregar_json, salvar_json
+from utility.funcoes import menu, indice, cadastrar, salvar_json, carregar_json
 
 elenco = carregar_json()
 

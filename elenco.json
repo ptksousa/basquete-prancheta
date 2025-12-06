@@ -1,5 +1,10 @@
 [
     {
+        "NOME": "LUCAS RODRIGUES",
+        "IDADE": 21,
+        "POSICAO": "PIVÔ"
+    },
+    {
         "NOME": "PATRICK SOUSA",
         "IDADE": 22,
         "POSICAO": "ARMADOR"
@@ -7,11 +12,16 @@
     {
         "NOME": "THAYS FERNANDES",
         "IDADE": 23,
-        "POSICAO": "ALA"
+        "POSICAO": "ALA-ARMADOR"
     },
     {
-        "NOME": "LUCAS OLIVEIRA",
-        "IDADE": 21,
-        "POSICAO": "PIVÔ"
+        "NOME": "PABLO SOUSA",
+        "IDADE": 17,
+        "POSICAO": "ALA-PIVÔ"
+    },
+    {
+        "NOME": "EUZENI SOARES",
+        "IDADE": 38,
+        "POSICAO": "ALA"
     }
 ]
