@@ -9,6 +9,9 @@ while True:
     if chave_menu == 1:
             jogador = cadastrar()
             elenco.append(jogador)
+            json = "elenco.json"
+            with open(json, mode="a") as open_file:
+                 cadastrando = open_file.write(elenco)
             print('Jogador cadastrado com sucesso.')
     elif chave_menu == 2:
         print(elenco)
