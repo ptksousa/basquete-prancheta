@@ -1,6 +1,6 @@
-from utility.funcoes import menu, indice, cadastrar
+from utility.funcoes import menu, indice, cadastrar, carregar_json, salvar_json
 
-elenco = []
+elenco = carregar_json()
 
 while True:
     menu()
@@ -9,9 +9,7 @@ while True:
     if chave_menu == 1:
             jogador = cadastrar()
             elenco.append(jogador)
-            json = "elenco.json"
-            with open(json, mode="a") as open_file:
-                 cadastrando = open_file.write(elenco)
+            salvar_json(elenco)
             print('Jogador cadastrado com sucesso.')
     elif chave_menu == 2:
         print(elenco)
