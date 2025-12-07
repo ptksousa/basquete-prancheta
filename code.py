@@ -21,7 +21,9 @@ while True:
         lista_jogadores(elenco)
 
     elif chave_menu == 3:
+        print("-="*32)
         print('EM BREVE')
+        time.sleep(1)
 
     elif chave_menu == 4:
         break

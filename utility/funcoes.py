@@ -8,6 +8,17 @@ def menu():
 [4] SAIR''')
     print("-="*32)
 
+def inteiro(prompt="Digite um número: "):
+    while True:
+        try:
+            resultado = int(input(prompt))
+            return resultado
+        except ValueError:
+            print('Digíte um valor válido.') 
+        
+
+i = inteiro("Selecione um índice: ")
+print(i)
 
 def indice():
     while True:
@@ -37,7 +48,8 @@ def cadastrar():
 
     for i, posicao in enumerate(posicoes):
         print(f'[{i}] {posicao}')
-              
+
+             
     posicao_escolha = indice()
     posicao = posicoes[posicao_escolha]
 
