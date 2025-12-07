@@ -1,6 +1,6 @@
 import time
 
-from utility.funcoes import menu, indice, cadastrar
+from utility.funcoes import menu, indice, cadastrar, lista_jogadores
 from utility.json_funcoes import salvar_json, carregar_json
 
 elenco = carregar_json()
@@ -18,15 +18,7 @@ while True:
             time.sleep(1)
 
     elif chave_menu == 2:
-        print("-="*32)
-        print("LISTA DE JOGADORES".center(64))
-        print("-="*32)
-        for i, jogador in enumerate(elenco):
-             print(f'[{i}] NOME: {jogador['NOME']}')
-             print(f'    IDADE: {jogador['IDADE']}')
-             print(f'    POSICAO: {jogador['POSICAO']}')
-             print("-"*64)
-        input('Pressione ENTER para retornar.')
+        lista_jogadores(elenco)
 
     elif chave_menu == 3:
         print('EM BREVE')
