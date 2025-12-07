@@ -4,5 +4,11 @@
         "SOBRENOME": "SOUSA",
         "IDADE": 22,
         "POSICAO": "ARMADOR"
+    },
+    {
+        "NOME": "PATRICK",
+        "SOBRENOME": "SOUSA",
+        "IDADE": 22,
+        "POSICAO": "ARMADOR"
     }
 ]

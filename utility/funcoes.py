@@ -17,18 +17,6 @@ def inteiro(prompt="Digite um número: "):
             print('Digíte um valor válido.') 
         
 
-i = inteiro("Selecione um índice: ")
-print(i)
-
-def indice():
-    while True:
-        try:
-            inteiro = int(input('- Digíte o índice que deseja acessar: '))
-            return inteiro
-        except ValueError:
-            print('Digíte um índice válido')
-
-
 def cadastrar():
     print("-="*32)
     print("CADASTRO DE JOGADOR".center(64))
@@ -37,21 +25,20 @@ def cadastrar():
     nome = input('Digíte o primeiro nome do jogador: ').upper().strip()
     sobrenome = input('Digíte o último nome do jogador: ').upper().strip()
 
-    while True:
-        try:
-            idade = int(input('Digíte a idade do jogador: '))
-            break
-        except ValueError:
-            print('!!!Digíte uma idade válida!!!')
+    idade = inteiro("Digíte a idade do jogador: ")
 
     posicoes = ['ARMADOR', 'ALA-ARMADOR', 'ALA', 'ALA-PIVÔ', 'PIVÔ']
 
     for i, posicao in enumerate(posicoes):
         print(f'[{i}] {posicao}')
 
-             
-    posicao_escolha = indice()
-    posicao = posicoes[posicao_escolha]
+    while True:
+        posicao_escolha = inteiro("Escolha o índice da posição do jogador: ")
+        try:
+            posicao = posicoes[posicao_escolha]
+            break
+        except IndexError:
+            print('Digíte o índice de uma posição existente.')
 
     jogador = {
         "NOME" : nome,

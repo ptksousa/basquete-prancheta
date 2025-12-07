@@ -1,13 +1,13 @@
 import time
 
-from utility.funcoes import menu, indice, cadastrar, lista_jogadores
+from utility.funcoes import menu, cadastrar, lista_jogadores, inteiro
 from utility.json_funcoes import salvar_json, carregar_json
 
 elenco = carregar_json()
 
 while True:
     menu()
-    chave_menu = indice()
+    chave_menu = inteiro("Digíte o índice do menu que deseja acessar: ")
 
     if chave_menu == 1:
             jogador = cadastrar()
